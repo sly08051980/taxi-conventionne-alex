@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="Month"
+    android:id="@+id/month"
+    android:textStyle="bold"
+    android:textSize="25dp"
+    android:padding="8dp"
+    android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Month"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:padding="8dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/sales"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Month"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:padding="8dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/anne"/>
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:text="Ajouter Vos Clients"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/recherche"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/recherche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnView"
+        android:layout_marginTop="48dp"
+        android:hint="Recherche par Nom"
+        android:inputType="textCapCharacters"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/adresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telephone"
+        android:layout_alignTop="@+id/telephone"
+        android:layout_marginTop="52dp"
+        android:hint="Adresse"
+        android:textSize="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/prenom"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/texttitle"
+        android:layout_marginTop="8dp"
+        android:hint="Nom"
+        android:inputType="textPersonName|textCapCharacters"
+
+        android:textSize="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/effacer"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_below="@+id/nom"
+        android:layout_alignBottom="@+id/nom"
+        android:layout_marginTop="8dp"
+        android:hint="Prenom"
+        android:textSize="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/nom"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prenom"
+
+        android:layout_marginTop="48dp"
+        android:hint="Téléphone"
+        android:inputType="number"
+        android:maxLength="10"
+        android:textSize="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/nom"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnInsert"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_button"
+        android:text="Modifier"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arriver" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/arriver"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_button"
+        android:text="Ajouter"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toEndOf="@+id/btnDelete"
+        app:layout_constraintTop_toBottomOf="@+id/arriver" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnUpdate"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button"
+        android:text="Supprimer"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnDelete"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_button"
+        android:text="Tous Voir"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsert" />
+
+    <Button
+        android:id="@+id/effacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_button"
+        android:text="Effacer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recherchetelephone" />
+
+    <EditText
+        android:id="@+id/arriver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adresse"
+        android:layout_marginTop="68dp"
+        android:hint="Arriver"
+        android:textSize="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/telephone"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/recherchetelephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnView"
+        android:layout_marginTop="48dp"
+        android:hint="Recherche par Téléphone"
+        android:inputType="number"
+        android:maxLength="10"
+        app:layout_constraintTop_toTopOf="@+id/recherche"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

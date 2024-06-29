@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5sp"
+    android:layout_marginTop="5sp"
+    android:layout_marginRight="5sp"
+    android:layout_marginBottom="5sp"
+    android:background="@drawable/colortext"
+
+    app:cardCornerRadius="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/colortext">
+        <TextView
+            android:id="@+id/listnom"
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="343dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/listprenom"
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="3dp"
+
+            android:layout_marginEnd="343dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listnom" />
+
+        <TextView
+            android:id="@+id/listtelephone"
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="3dp"
+
+            android:layout_marginEnd="343dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listprenom" />
+
+        <TextView
+            android:id="@+id/listadresse"
+            android:layout_width="278dp"
+            android:layout_height="26dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="-1dp" />
+
+        <TextView
+            android:id="@+id/listcodepostal"
+            android:layout_width="66dp"
+            android:layout_height="26dp"
+            android:layout_marginEnd="212dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listadresse" />
+
+        <TextView
+            android:id="@+id/listville"
+            android:layout_width="210dp"
+            android:layout_height="26dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/listcodepostal"
+            app:layout_constraintTop_toBottomOf="@+id/listadresse" />
+
+        <TextView
+            android:id="@+id/adress2"
+            android:layout_width="278dp"
+            android:layout_height="26dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listcodepostal" />
+
+        <TextView
+            android:id="@+id/listcodepostal2"
+            android:layout_width="66dp"
+            android:layout_height="26dp"
+            android:layout_marginEnd="212dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adress2" />
+
+        <TextView
+            android:id="@+id/listville2"
+            android:layout_width="210dp"
+            android:layout_height="26dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/listcodepostal2"
+            app:layout_constraintTop_toBottomOf="@+id/adress2" />
+
+        <TextView
+            android:id="@+id/listpersonne"
+            android:layout_width="80dp"
+            android:layout_height="26dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.008"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listtelephone" />
+
+        <TextView
+            android:id="@+id/listchauffeur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="75dp"
+            tools:layout_editor_absoluteY="41dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

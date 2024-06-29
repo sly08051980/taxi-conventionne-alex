@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "400594106451",
+    "project_id": "taxiconventionne77-664d5",
+    "storage_bucket": "taxiconventionne77-664d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400594106451:android:68f31b6541850694bbaea6",
+        "android_client_info": {
+          "package_name": "com.slyfly1.taxiconventionne77"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400594106451-d0q7fb1g5sajsfnfrqohlnu3ro5hgg96.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.slyfly1.taxiconventionne77",
+            "certificate_hash": "ca42af985f429095ce0969a790acddc7b78edea2"
+          }
+        },
+        {
+          "client_id": "400594106451-e5fl37osnjq00uulnt3tmad9vmvi72ta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6pBQhc1iJfO2Lbucv8hW_kMXF3imAyO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400594106451-e5fl37osnjq00uulnt3tmad9vmvi72ta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

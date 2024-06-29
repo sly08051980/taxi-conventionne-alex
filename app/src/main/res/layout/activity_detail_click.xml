@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+tools:context=".DetailClick">
+
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:text="TextView"
+
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/telephone"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="appelertelephone"
+        android:text="0100000000"
+
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:text="01/01/2000"
+
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/heure"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="18:30"
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/date"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/adressedepart"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/villedepart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/codepostaldepart"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:text="93110"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/adressearriver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.002"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/villedepart"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:text="TextView"
+
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/adressearriver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toEndOf="@+id/codepostaldepart" />
+
+    <TextView
+        android:id="@+id/valider"
+        android:layout_width="260dp"
+        android:layout_height="14dp"
+        android:text="TextView"
+        android:textSize="24sp"
+
+        android:visibility="invisible"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="476dp" />
+
+    <TextView
+        android:id="@+id/villearriver"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="48dp"
+        android:text="TextView"
+
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toEndOf="@+id/codepostalarriver" />
+
+    <TextView
+        android:id="@+id/codepostalarriver"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="48dp"
+        android:text="93110"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/adressearriver"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/villearriver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/idtest"
+        android:layout_width="233dp"
+        android:layout_height="35dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <TextView
+
+        android:layout_width="233dp"
+        android:layout_height="35dp"
+        android:text="Refuser par :"
+
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.005"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <TextView
+        android:id="@+id/refuser"
+        android:layout_width="92dp"
+        android:layout_height="35dp"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idtest" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/custom_button"
+        android:onClick="valider"
+        android:text="Valider"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="378dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_button"
+        android:onClick="load"
+        android:text="Load"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/custom_button"
+        android:onClick="refuser"
+        android:text="Refuser"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        tools:layout_editor_absoluteX="15dp" />
+
+    <TextView
+        android:id="@+id/validernom"
+        android:layout_width="22dp"
+        android:layout_height="27dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.683"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/testdate"
+        android:layout_width="39dp"
+        android:layout_height="21dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/nom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="211dp" />
+
+    <TextView
+        android:id="@+id/textViewminute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="308dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewheure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:text="Nom"
+        android:background="@drawable/colortext"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/prenom"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:text="Prenom"
+        android:background="@drawable/colortext"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/prenom"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:text="Téléphone"
+        android:textSize="24sp"
+        android:background="@drawable/colortext"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:text="TextView"
+
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="12dp"
+        android:text="Date"
+        android:background="@drawable/colortext"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Heure"
+        android:textSize="24sp"
+        android:background="@drawable/colortext"
+        app:layout_constraintBottom_toBottomOf="@+id/date"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="20dp"
+        android:text="Nbr de personnes"
+        android:background="@drawable/colortext"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/adressedepart"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <TextView
+        android:id="@+id/personne"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="20dp"
+        android:text="TextView"
+
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/adressedepart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.686"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.slyfly1.taxiconventionne77.MainActivity"
+    android:background="@drawable/alex">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/txtbonjour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/colorHeader"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="343dp"
+        android:visibility="invisible"
+        android:layout_height="54dp" />
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:hint="Title"
+        android:inputType="text"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="17dp"
+        android:hint="Description"
+        android:inputType="text"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:hint="Description"
+        android:inputType="text"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/recycleview"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button"
+        android:onClick="RecycleView"
+        android:text="RDV INTERNET" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:onClick="addNote"
+        android:text="Add"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:onClick="loadNotes"
+        android:text="Load"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:onClick="calendrier"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button"
+        android:text="Calendrier" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="testNotes"
+        android:visibility="invisible"
+        android:text="Test" />
+
+    <Button
+        android:id="@+id/ajoutclient"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Client"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button"
+        android:onClick="ajouterClient"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/surnom"
+        android:visibility="invisible"/>
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Deconnexion"
+        android:background="@drawable/custom_button"
+        android:layout_marginTop="150dp"
+        android:layout_gravity="center"
+
+
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_view_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:visibility="invisible"/>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="5dp"
+
+        tools:targetApi="lollipop" />
+
+</LinearLayout>

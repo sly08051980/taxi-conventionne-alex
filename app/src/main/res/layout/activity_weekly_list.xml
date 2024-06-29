@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".calendrier.WeeklyListActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/weeklyRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yearText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="-1dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageButton
+        android:id="@+id/weekButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/colorButton"
+        app:srcCompat="@drawable/ic_today_black_24dp" />
+
+    <TextView
+        android:id="@+id/monthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="MAI"
+        android:textAlignment="center"
+        android:textColor="@color/colorHeader"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/yearText"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/monthText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="0dp"
+        android:fontFamily="monospace"
+        android:text="2020"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorHeader"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/monthText"
+        android:layout_alignBottom="@+id/yearText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="-7dp"
+        android:layout_toStartOf="@+id/weekButton"
+        android:text="CPAM" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/monthText"
+        android:layout_alignBottom="@+id/yearText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="54dp"
+        android:layout_toStartOf="@+id/weekButton"
+        android:text="CB" />
+
+    <TextView
+        android:id="@+id/montantcb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yearText"
+        android:layout_marginStart="117dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="55dp"
+        android:layout_toStartOf="@+id/weekButton"
+        android:layout_toEndOf="@+id/yearText" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/monthText"
+        android:layout_alignBottom="@+id/yearText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="34dp"
+        android:layout_toStartOf="@+id/weekButton"
+        android:text="Espèce" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="69dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/monthText"
+        android:layout_alignBottom="@+id/yearText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="13dp"
+        android:layout_toStartOf="@+id/weekButton"
+        android:text="Chèque" />
+
+    <TextView
+        android:id="@+id/montantcheque"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yearText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="231dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="13dp"
+        android:layout_toStartOf="@+id/weekButton" />
+
+    <TextView
+        android:id="@+id/montantcpam"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yearText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="231dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="-7dp"
+        android:layout_toStartOf="@+id/weekButton" />
+
+    <TextView
+        android:id="@+id/montantespece"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yearText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="231dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="34dp"
+        android:layout_toStartOf="@+id/weekButton" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yearText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="-27dp"
+        android:layout_toStartOf="@+id/weekButton"
+        android:text="Total" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yearText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="231dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="-26dp"
+        android:layout_toStartOf="@+id/weekButton" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yearText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginBottom="-27dp"
+        android:layout_toStartOf="@+id/weekButton"
+        android:text="Nbr Client" />
+
+    <TextView
+        android:id="@+id/nbrclient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yearText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="187dp"
+        android:layout_marginBottom="-27dp"
+        android:layout_toStartOf="@+id/weekButton" />
+
+
+</RelativeLayout>

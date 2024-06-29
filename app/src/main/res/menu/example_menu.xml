@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/assu"
+        android:icon="@drawable/cpam"
+        android:title="Cpam"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/avalider"
+                android:title="A Valider"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/validerfinal"
+                android:title="Valider"
+                app:showAsAction="never"
+                />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/graph"
+        android:icon="@drawable/graph"
+        android:title="Graph"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/views"
+        android:icon="@drawable/ic_viewlistcouleur"
+        android:title="Views"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/calendar"
+                android:title="Calendrier"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/weekly"
+                android:title="Semaine"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/monthly"
+                android:title="Mois"
+                app:showAsAction="never"
+                />
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Settings"
+        app:showAsAction="ifRoom"
+        android:visible="false"/>
+
+
+
+</menu>
